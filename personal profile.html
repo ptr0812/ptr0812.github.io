@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ptr | Student</title>
+    <style>
+        /* CSS 变量定义颜色，支持自动切换深浅色模式 */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --secondary-text: #666666;
+            --link-color: #0056b3;
+            --link-hover: #003d82;
+            --divider-color: #eaeaea;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                --secondary-text: #a0a0a0;
+                --link-color: #66b3ff;
+                --link-hover: #99ccff;
+                --divider-color: #333333;
+            }
+        }
+
+        /* 全局样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* 限制内容最大宽度并居中，保证阅读体验 */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 头部样式 */
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--secondary-text);
+            margin: 0;
+            font-weight: 400;
+        }
+
+        /* 模块通用样式 */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* 技能列表样式 */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        /* 链接样式 */
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        /* 底部版权 */
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--divider-color);
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hi, I'm ptr.</h1>
+            <p class="subtitle">A sophomore majoring in Communication Engineering.</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am currently an undergraduate student. Right now, I am focusing on <strong>studying Vibe Coding</strong> and exploring how AI-assisted programming can help build better software and web projects.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Tools</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, C++</li>
+                <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to check out my work on GitHub.</p>
+            <p><a href="https://github.com/ptr0812" target="_blank" rel="noopener noreferrer">github.com/ptr0812</a></p>
+        </section>
+
+        <footer>
+            &copy; 2024 ptr. Built for Vibe Coding.
+        </footer>
+    </div>
+
+</body>
+</html>
